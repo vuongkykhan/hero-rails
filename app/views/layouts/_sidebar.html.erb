@@ -15,12 +15,51 @@
 
   <!-- MENU -->
   <ul class="drawer-menu" id="mainMenu" data-children=".drawer-submenu">
-    <li class="drawer-menu-item">
+<!--     <li class="drawer-menu-item">
       <a href="/">
         <i class="material-icons">home</i>
         <span class="drawer-menu-text">Dashboard</span>
       </a>
+      <ul class="collapse show" id="dashboardMenu">
+        <li class="drawer-menu-item active"><a href="index.html">Dashboard 1</a></li>
+        <li class="drawer-menu-item "><a href="index-second.html">Dashboard 2</a></li>
+        <li class="drawer-menu-item "><a href="index-third.html">Dashboard 3</a></li>
+      </ul>
+    </li> -->
+
+
+    <li class="drawer-menu-item drawer-submenu">
+      <a data-toggle="collapse" data-parent="#mainMenu" href="#" data-target="#dashboardMenu" aria-controls="dashboardMenu" aria-expanded="false" class="collapsed">
+        <i class="material-icons">home</i>
+        <span class="drawer-menu-text"> Dashboard</span>
+      </a>
+      <ul class="collapse" id="dashboardMenu">
+        <li class="drawer-menu-item active"><a href="index.html">Dashboard 1</a></li>
+        <li class="drawer-menu-item "><a href="index-second.html">Dashboard 2</a></li>
+        <li class="drawer-menu-item "><a href="index-third.html">Dashboard 3</a></li>
+      </ul>
     </li>
+
+    <li class="drawer-menu-item drawer-submenu">
+      <a data-toggle="collapse" data-parent="#mainMenu" href="#appsMenu" data-target="#appsMenu" aria-controls="appsMenu" aria-expanded="false" class="collapsed">
+        <i class="material-icons">view_quilt</i>
+        <span class="drawer-menu-text"> Apps</span>
+      </a>
+      <ul class="collapse " id="appsMenu">
+        <li class="drawer-menu-item "><a href="apps-email.html">Email</a></li>
+        <li class="drawer-menu-item "><a href="apps-chat.html">Chat</a></li>
+        <li class="drawer-menu-item "><a href="apps-clients.html">Clients</a></li>
+      </ul>
+    </li>
+
+    <li class="drawer-menu-item ">
+      <a href="charts.html">
+        <i class="material-icons">insert_chart</i>
+        <span class="drawer-menu-text">Charts</span>
+      </a>
+    </li>
+
+
     <li class="drawer-menu-item">
       <a href="/second">
         <i class="material-icons">menu</i>
